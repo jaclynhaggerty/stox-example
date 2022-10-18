@@ -19,6 +19,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {/* todo: menu should be hideable  */}
+      <MobileMenu></MobileMenu>
       <div
         style={{
           margin: `0 auto`,
@@ -26,8 +28,6 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-{/* todo: menu should be hideable  */}
-<MobileMenu></MobileMenu>
 
         <main>{children}</main>
         <footer
