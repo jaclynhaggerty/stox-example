@@ -6,7 +6,7 @@ import HamburgerButton from "./HamburgerButton"
 import { FaSearch } from "react-icons/fa"
 import { SlBag } from "react-icons/sl"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, toggleMenu, showMenu }) => (
   <header
     style={{
       margin: `0 auto`,
@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
       float: "left",
       display: "flex",
       alignItems: "center", }}>
-      <HamburgerButton> </HamburgerButton>
+      <HamburgerButton showMenu={showMenu} onClick={toggleMenu}></HamburgerButton>
       <Link
         to="/"
         style={{
@@ -48,6 +48,8 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  toggleMenu: PropTypes.func,
+  showMenu: PropTypes.bool
 }
 
 Header.defaultProps = {

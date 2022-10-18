@@ -7,6 +7,13 @@ import PropTypes from "prop-types"
 
 
 const Layout = ({ children }) => {
+  const [showMobileMenu, setShowMobileMenu] = React.useState(false);
+  const toggleMenu = () => {
+    // Switch between true and false each click
+    setShowMobileMenu(!showMobileMenu);
+  }
+
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,9 +25,8 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      {/* todo: menu should be hideable  */}
-      <MobileMenu></MobileMenu>
+      <Header showMenu={showMobileMenu} toggleMenu={toggleMenu} siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {showMobileMenu && <MobileMenu></MobileMenu>}
       <div
         style={{
           margin: `0 auto`,

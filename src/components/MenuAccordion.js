@@ -10,13 +10,18 @@ const MenuAccordion = () => {
             }}
         >
             <Accordion>
-                {["Daily", "Sport", "Walk", "Travel", "Recover", "Medical", "Ski"].map((item, index) => {
+                {["DAILY", "SPORT", "WALK", "TRAVEL", "RECOVER", "MEDICAL", "SKI"].map((item, index) => {
                     return (
                         <Accordion.Item key={index} eventKey={index}>
-                            <Accordion.Header>{item}</Accordion.Header>
+                            <Accordion.Header><span style={{ marginLeft: '30px' }}>{item}</span></Accordion.Header>
                             <Accordion.Body>
-                                test
-                                bootstrap
+                                <div> <p>SPORT SOCKS </p> <p>  25 products </p></div>
+                                <div> <p>RUNNING SOCKS </p> <p> 25 products </p></div>
+                                <div> <p>HOCKEY SOCKS  </p> <p> 25 products </p></div>
+                                <div> <p>SKI SOCKS   </p> <p>   25 products </p></div>
+                                <div> <p>FLIGHT SOCKS  </p> <p> 25 products  </p></div>
+                                <div> <p>HIKING SOCKS  </p> <p> 25 products </p></div>
+                                <div> <p>WORK SOCKS   </p> <p>  25 products </p></div>
                             </Accordion.Body>
                         </Accordion.Item>
                     );
