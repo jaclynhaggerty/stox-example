@@ -1,0 +1,31 @@
+.content {
+    height: 700px;
+    display: flex;
+    width: auto;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+  }
+
+.content a {
+    text-decoration: none;
+}
+
+.img-text {
+    position: relative;
+    bottom: 100px;
+    left: 40px;
+    font-size: 40px;
+    color: #000;
+    text-decoration: none;
+}
+
+.image {
+    min-width: 400px;
+    height: 700px;
+    margin: 10px;
+}
