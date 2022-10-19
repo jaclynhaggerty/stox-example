@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header showMenu={showMobileMenu} toggleMenu={toggleMenu} siteTitle={data.site.siteMetadata?.title || `Title`} />
-      {showMobileMenu && <MobileMenu></MobileMenu>}
+      {showMobileMenu && <MobileMenu/>}
       <div
         style={{
           margin: `0 auto`,

@@ -41,7 +41,7 @@ const Header = ({ siteTitle, toggleMenu, showMenu }) => (
       display: "flex",
       alignItems: "center", }}>
       <FaSearch style={{ fontSize: "35px", marginRight: "30px" }} />
-      <SlBag style={{ fontSize: "35px", strokeWidth: "40px" }} />
+      <SlBag style={{ fontSize: "35px", strokeWidth: "40px" }} /> 
     </div>
   </header>
 )

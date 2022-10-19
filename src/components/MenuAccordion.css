@@ -1,8 +1,5 @@
-
-
 .accordion-button {
     font-size: 34px;
-    font-family: "Maison Neue";
 }
 
 .accordion-body {
@@ -14,8 +11,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 
 .accordion-body div p:first-of-type{
     margin-left: 30px;
